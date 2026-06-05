@@ -1716,3 +1716,263 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/*--------------------------------------------------------------
+# Theme Buttons (used across all sections)
+--------------------------------------------------------------*/
+.btn-theme-primary,
+.btn-theme-outline {
+  display: inline-block;
+  padding: 10px 28px;
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 0.88rem;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-theme-primary {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  border: 2px solid var(--accent-color);
+}
+
+.btn-theme-primary i {
+  color: var(--contrast-color);
+  transition: color 0.3s ease;
+}
+
+.btn-theme-primary:hover {
+  background: transparent;
+  color: var(--accent-color);
+}
+
+.btn-theme-primary:hover i {
+  color: var(--accent-color);
+}
+
+.btn-theme-outline {
+  background: transparent;
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+}
+
+.btn-theme-outline i {
+  color: var(--accent-color);
+  transition: color 0.3s ease;
+}
+
+.btn-theme-outline:hover {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.btn-theme-outline:hover i {
+  color: var(--contrast-color);
+}
+
+/*--------------------------------------------------------------
+# Button mobile padding fix
+--------------------------------------------------------------*/
+@media (max-width: 767px) {
+  .btn-theme-primary,
+  .btn-theme-outline {
+    padding: 8px 18px;
+    font-size: 0.82rem;
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+
+  .d-flex.gap-3.flex-wrap {
+    gap: 10px !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# About section - ensure btn-theme-primary matches theme
+--------------------------------------------------------------*/
+.about .btn-theme-primary {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.about .btn-theme-primary:hover {
+  background-color: transparent;
+  color: var(--accent-color);
+}
+
+/*--------------------------------------------------------------
+# Amenities tiles - smaller on mobile
+--------------------------------------------------------------*/
+@media (max-width: 767px) {
+  #amenities .service-item {
+    padding: 20px 16px;
+  }
+
+  #amenities .service-item .icon {
+    font-size: 1.6rem;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 10px;
+  }
+
+  #amenities .service-item h3 {
+    font-size: 1rem;
+  }
+
+  #amenities .service-item p {
+    font-size: 0.82rem;
+    margin-bottom: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Gallery swiper buttons - theme colours
+--------------------------------------------------------------*/
+#gallery .swiper-button-next,
+#gallery .swiper-button-prev {
+  color: var(--accent-color);
+  background: rgba(0, 0, 0, 0.35);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  backdrop-filter: blur(4px);
+}
+
+#gallery .swiper-button-next::after,
+#gallery .swiper-button-prev::after {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+#gallery .swiper-pagination-bullet {
+  background: var(--accent-color);
+  opacity: 0.5;
+}
+
+#gallery .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: var(--accent-color);
+}
+
+/*--------------------------------------------------------------
+# Scroll-top - lift above mobile sticky bar, desktop only
+--------------------------------------------------------------*/
+@media (max-width: 767px) {
+  .scroll-top {
+    bottom: 70px;
+    right: 12px;
+  }
+}
+
+/*--------------------------------------------------------------
+# About section - dark buttons (black bg, gold border/text)
+--------------------------------------------------------------*/
+.btn-theme-dark {
+  display: inline-block;
+  padding: 10px 28px;
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 0.88rem;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  background: #111;
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+}
+
+.btn-theme-dark i {
+  color: var(--accent-color);
+  transition: color 0.3s ease;
+}
+
+.btn-theme-dark:hover {
+  background: var(--accent-color);
+  color: #111;
+}
+
+.btn-theme-dark:hover i {
+  color: #111;
+}
+
+.btn-theme-dark-outline {
+  display: inline-block;
+  padding: 10px 28px;
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 0.88rem;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  background: transparent;
+  color: #111;
+  border: 2px solid #111;
+}
+
+.btn-theme-dark-outline i {
+  color: #111;
+  transition: color 0.3s ease;
+}
+
+.btn-theme-dark-outline:hover {
+  background: #111;
+  color: var(--accent-color);
+}
+
+.btn-theme-dark-outline:hover i {
+  color: var(--accent-color);
+}
+
+/*--------------------------------------------------------------
+# Section button group - spacing fix on mobile
+--------------------------------------------------------------*/
+.section-btn-group {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media (max-width: 767px) {
+  .section-btn-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .section-btn-group .btn-theme-primary,
+  .section-btn-group .btn-theme-outline {
+    width: 80%;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Performance: reduce AOS duration on mobile
+--------------------------------------------------------------*/
+@media (max-width: 767px) {
+  [data-aos] {
+    transition-duration: 400ms !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Features section - download button icon override
+--------------------------------------------------------------*/
+.features .btn-theme-primary i {
+  color: #111;
+}
+
+.features .btn-theme-primary:hover i {
+  color: var(--accent-color);
+}

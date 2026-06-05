@@ -8,23 +8,22 @@
   <meta name="description" content="Havena by KSR – Premium 2BHK and 3BHK homes in Yelahanka, Bangalore. RERA approved. Experience earthen living with world-class amenities. Possession by 2027.">
   <meta name="keywords" content="Havena KSR, 2BHK 3BHK Bangalore, Yelahanka homes, RERA approved flats, KSR builders, Havena project">
 
-  <!-- Favicons -->
+  <!-- Preload critical above-fold assets -->
+  <link rel="preload" as="image" href="assets/img/Reviva/1.jpg">
+  <link rel="preload" as="image" href="assets/img/Reviva/logo-gold-for-black.png">
   <link href="assets/img/Reviva/favicon.png" rel="icon">
   <link href="assets/img/Reviva/favicon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@400;500;600;700&family=Roboto:wght@300;400;500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -44,7 +43,7 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
-        <img src="assets/img/Reviva/logo-gold-for-black.png" alt="Havena" style="height:44px;width:auto;">
+        <img src="assets/img/Reviva/logo-gold-for-black.png" alt="Havena" style="height:44px;width:auto;" decoding="async">
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -76,7 +75,7 @@
 
       <!-- Fallback image shown if video fails or is slow -->
       <img id="hero-fallback" src="assets/img/Reviva/1.jpg" alt="Havena by KSR"
-        style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;display:none;">
+        style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;display:none;" fetchpriority="high">
 
       <!-- Video Controls -->
       <div style="position:absolute;bottom:20px;left:24px;z-index:10;display:flex;align-items:center;gap:12px;">
@@ -119,7 +118,7 @@
 
         <div class="row gy-4">
           <div class="col-lg-6 order-1 order-lg-2">
-            <img src="assets/img/Reviva/gallery/slider-1.jpg" class="img-fluid" alt="">
+            <img src="assets/img/Reviva/gallery/slider-1.jpg" class="img-fluid" alt="" loading="lazy" decoding="async">
           </div>
           <div class="col-lg-6 order-2 order-lg-1 content">
             <h3>ABOUT HAVENA</h3>
@@ -134,7 +133,7 @@
               <li> <span> <strong> Welcome Home </strong> </span></li> 
               <li><span> <strong> Welcome to Havena </strong></span></li> 
             </ul>
-            <img src="assets/img/Reviva/gallery/rera.png" class="img-fluid" alt="">
+            <img src="assets/img/Reviva/gallery/rera.png" class="img-fluid" alt="" loading="lazy" decoding="async">
             <p>RERA Approved Project</p>
             <div class="d-flex gap-3 mt-3 flex-wrap">
               <button class="brochure-trigger btn-theme-primary" data-source="About"><i class="bi bi-file-earmark-arrow-down me-2"></i>Download Brochure</button>
@@ -220,7 +219,7 @@
 
         <div class="row gy-4">
           <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img
-              src="assets/img/Reviva/gallery/slider-3.jpg" alt=""></div>
+              src="assets/img/Reviva/gallery/slider-3.jpg" alt="" loading="lazy" decoding="async"></div>
           <div class="col-lg-6">
 
             <div class="features-item d-flex ps-0 ps-lg-3 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="200">
@@ -367,7 +366,7 @@
     <!-- Call To Action Section -->
     <section id="call-to-action" class="call-to-action section dark-background">
 
-      <img src="assets/img/Reviva/Play.jpg" alt="">
+      <img src="assets/img/Reviva/Play.jpg" alt="" loading="lazy" decoding="async">
 
       <div class="container">
         <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
@@ -868,7 +867,7 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-8 text-center">
-            <img src="assets/img/Reviva/gallery/landscape.jpg" class="img-fluid" alt="Master Plan">
+            <img src="assets/img/Reviva/gallery/landscape.jpg" class="img-fluid" alt="Master Plan" loading="lazy" decoding="async">
           </div>
           <div class="col-lg-4 content d-flex flex-column justify-content-center">
             <h3>Thoughtfully Planned Layout</h3>
@@ -932,14 +931,14 @@
             }
           </script>
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="assets/img/Reviva/SSI_Bangloare_View_01.jpg" class="img-fluid w-100" style="height:300px;object-fit:cover;border-radius:8px;" alt="View 01"></div>
-            <div class="swiper-slide"><img src="assets/img/Reviva/SSI_Bangloare_View_02.jpg" class="img-fluid w-100" style="height:300px;object-fit:cover;border-radius:8px;" alt="View 02"></div>
-            <div class="swiper-slide"><img src="assets/img/Reviva/SSI_Bangloare_View_05.jpg" class="img-fluid w-100" style="height:300px;object-fit:cover;border-radius:8px;" alt="View 05"></div>
-            <div class="swiper-slide"><img src="assets/img/Reviva/SSI_Bangloare_View_06.jpg" class="img-fluid w-100" style="height:300px;object-fit:cover;border-radius:8px;" alt="View 06"></div>
-            <div class="swiper-slide"><img src="assets/img/Reviva/SSI_Bangloare_View_09.jpg" class="img-fluid w-100" style="height:300px;object-fit:cover;border-radius:8px;" alt="View 09"></div>
-            <div class="swiper-slide"><img src="assets/img/Reviva/SSI_Bangloare_View_10.jpg" class="img-fluid w-100" style="height:300px;object-fit:cover;border-radius:8px;" alt="View 10"></div>
-            <div class="swiper-slide"><img src="assets/img/Reviva/SSI_Bangloare_View_11.jpg" class="img-fluid w-100" style="height:300px;object-fit:cover;border-radius:8px;" alt="View 11"></div>
-            <div class="swiper-slide"><img src="assets/img/Reviva/SSI_Bangloare_View_12.jpg" class="img-fluid w-100" style="height:300px;object-fit:cover;border-radius:8px;" alt="View 12"></div>
+            <div class="swiper-slide"><img src="assets/img/Reviva/SSI_Bangloare_View_01.jpg" class="img-fluid w-100" style="height:300px;object-fit:cover;border-radius:8px;" alt="View 01" loading="lazy" decoding="async"></div>
+            <div class="swiper-slide"><img src="assets/img/Reviva/SSI_Bangloare_View_02.jpg" class="img-fluid w-100" style="height:300px;object-fit:cover;border-radius:8px;" alt="View 02" loading="lazy" decoding="async"></div>
+            <div class="swiper-slide"><img src="assets/img/Reviva/SSI_Bangloare_View_05.jpg" class="img-fluid w-100" style="height:300px;object-fit:cover;border-radius:8px;" alt="View 05" loading="lazy" decoding="async"></div>
+            <div class="swiper-slide"><img src="assets/img/Reviva/SSI_Bangloare_View_06.jpg" class="img-fluid w-100" style="height:300px;object-fit:cover;border-radius:8px;" alt="View 06" loading="lazy" decoding="async"></div>
+            <div class="swiper-slide"><img src="assets/img/Reviva/SSI_Bangloare_View_09.jpg" class="img-fluid w-100" style="height:300px;object-fit:cover;border-radius:8px;" alt="View 09" loading="lazy" decoding="async"></div>
+            <div class="swiper-slide"><img src="assets/img/Reviva/SSI_Bangloare_View_10.jpg" class="img-fluid w-100" style="height:300px;object-fit:cover;border-radius:8px;" alt="View 10" loading="lazy" decoding="async"></div>
+            <div class="swiper-slide"><img src="assets/img/Reviva/SSI_Bangloare_View_11.jpg" class="img-fluid w-100" style="height:300px;object-fit:cover;border-radius:8px;" alt="View 11" loading="lazy" decoding="async"></div>
+            <div class="swiper-slide"><img src="assets/img/Reviva/SSI_Bangloare_View_12.jpg" class="img-fluid w-100" style="height:300px;object-fit:cover;border-radius:8px;" alt="View 12" loading="lazy" decoding="async"></div>
           </div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
@@ -1088,7 +1087,7 @@
         <div class="row gy-4">
           <div class="col-lg-3 col-md-6 footer-about">
             <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename"><img src="assets/img/Reviva/logo-gold-for-black.png" class="img-fluid" style="height:44px;width:auto;" alt="Havena by KSR"></span>
+              <span class="sitename"><img src="assets/img/Reviva/logo-gold-for-black.png" class="img-fluid" style="height:44px;width:auto;" alt="Havena by KSR" loading="lazy" decoding="async"></span>
             </a>
             <div class="footer-contact pt-3">
               <p>2BHK and 3BHK Homes that Breathe at Bommasandra , Surya Nagar 5 minutes from chandapur circle , 15
@@ -1189,16 +1188,12 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/vendor/aos/aos.js" defer></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
 
   <script>
     (function () {
@@ -1279,8 +1274,8 @@
         brochureModal.show();
       }
 
-      // Auto-pop at 10s, 30s, 120s, 240s, 480s... doubling after 240
-      const popIntervals = [10000,30000, 120000, 240000];
+      // Auto-pop at 18s, 30s, 120s, 240s, 480s... doubling after 240
+      const popIntervals = [18000,30000, 120000, 240000];
       let popIndex = 0;
       let autoPopTimer;
 

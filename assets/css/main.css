@@ -2060,3 +2060,12 @@ button.brochure-trigger.cta-btn:hover i,
 a.cta-btn:hover i {
   color: var(--background-color);
 }
+
+/*--------------------------------------------------------------
+# Copyright - clear sticky mobile bar
+--------------------------------------------------------------*/
+@media (max-width: 767px) {
+  .footer .copyright {
+    padding-bottom: 90px;
+  }
+}

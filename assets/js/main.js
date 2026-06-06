@@ -20,7 +20,7 @@
   }
 
   document.addEventListener('scroll', toggleScrolled);
-  window.addEventListener('load', toggleScrolled);
+  document.addEventListener('DOMContentLoaded', toggleScrolled);
 
   /**
    * Mobile nav toggle
@@ -65,7 +65,7 @@
    */
   const preloader = document.querySelector('#preloader');
   if (preloader) {
-    window.addEventListener('load', () => {
+    document.addEventListener('DOMContentLoaded', () => {
       preloader.remove();
     });
   }
@@ -88,7 +88,7 @@
     });
   });
 
-  window.addEventListener('load', toggleScrollTop);
+  document.addEventListener('DOMContentLoaded', toggleScrollTop);
   document.addEventListener('scroll', toggleScrollTop);
 
   /**
@@ -102,7 +102,7 @@
       mirror: false
     });
   }
-  window.addEventListener('load', aosInit);
+  document.addEventListener('DOMContentLoaded', aosInit);
 
   /**
    * Init swiper sliders
@@ -121,12 +121,12 @@
     });
   }
 
-  window.addEventListener("load", initSwiper);
+  document.addEventListener('DOMContentLoaded', initSwiper);
 
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
    */
-  window.addEventListener('load', function(e) {
+  document.addEventListener('DOMContentLoaded', function(e) {
     if (window.location.hash) {
       if (document.querySelector(window.location.hash)) {
         setTimeout(() => {
@@ -160,7 +160,7 @@
       }
     })
   }
-  window.addEventListener('load', navmenuScrollspy);
+  document.addEventListener('DOMContentLoaded', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();

@@ -9,8 +9,8 @@
   <meta name="keywords" content="Havena KSR, 2BHK 3BHK Bangalore, Yelahanka homes, RERA approved flats, KSR builders, Havena project">
 
   <!-- Preload critical above-fold assets -->
-  <link rel="preload" as="image" href="assets/img/Reviva/1.jpg">
-  <link rel="preload" as="image" href="assets/img/Reviva/logo-gold-for-black.png">
+  <link rel="preload" as="image" href="assets/img/Reviva/1.webp">
+  <link rel="preload" as="image" href="assets/img/Reviva/logo-gold-for-black.webp">
   <link href="assets/img/Reviva/favicon.png" rel="icon">
   <link href="assets/img/Reviva/favicon.png" rel="apple-touch-icon">
 
@@ -43,7 +43,7 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
-        <img src="assets/img/Reviva/logo-gold-for-black.png" alt="Havena" style="height:44px;width:auto;" decoding="async">
+        <img src="assets/img/Reviva/logo-gold-for-black.webp" alt="Havena" style="height:44px;width:auto;" decoding="async">
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -69,12 +69,12 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <video id="hero-video" muted loop playsinline style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;">
+      <video id="hero-video" muted loop playsinline preload="none" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;">
         <!-- sources injected by JS based on connection speed -->
       </video>
 
       <!-- Fallback image shown if video fails or is slow -->
-      <img id="hero-fallback" src="assets/img/Reviva/1.jpg" alt="Havena by KSR"
+      <img id="hero-fallback" src="assets/img/Reviva/1.webp" alt="Havena by KSR"
         style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;display:none;" fetchpriority="high">
 
       <!-- Video Controls -->
@@ -366,7 +366,7 @@
     <!-- Call To Action Section -->
     <section id="call-to-action" class="call-to-action section dark-background">
 
-      <img src="assets/img/Reviva/Play.jpg" alt="" loading="lazy" decoding="async">
+      <img src="assets/img/Reviva/Play.webp" alt="" loading="lazy" decoding="async">
 
       <div class="container">
         <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
@@ -867,7 +867,7 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-8 text-center">
-            <img src="assets/img/Reviva/gallery/landscape.jpg" class="img-fluid" alt="Master Plan" loading="lazy" decoding="async">
+            <img src="assets/img/Reviva/gallery/landscape.webp" class="img-fluid" alt="Master Plan" loading="lazy" decoding="async">
           </div>
           <div class="col-lg-4 content d-flex flex-column justify-content-center">
             <h3>Thoughtfully Planned Layout</h3>
@@ -1087,7 +1087,7 @@
         <div class="row gy-4">
           <div class="col-lg-3 col-md-6 footer-about">
             <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename"><img src="assets/img/Reviva/logo-gold-for-black.png" class="img-fluid" style="height:44px;width:auto;" alt="Havena by KSR" loading="lazy" decoding="async"></span>
+              <span class="sitename"><img src="assets/img/Reviva/logo-gold-for-black.webp" class="img-fluid" style="height:44px;width:auto;" alt="Havena by KSR" loading="lazy" decoding="async"></span>
             </a>
             <div class="footer-contact pt-3">
               <p>2BHK and 3BHK Homes that Breathe at Bommasandra , Surya Nagar 5 minutes from chandapur circle , 15
@@ -1188,12 +1188,12 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
-  <script src="assets/vendor/aos/aos.js" defer></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/main.js"></script>
 
   <script>
     (function () {

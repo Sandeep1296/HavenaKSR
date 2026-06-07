@@ -1861,6 +1861,34 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Gallery image styling
+--------------------------------------------------------------*/
+#gallery .swiper-slide a {
+  display: block;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease;
+}
+
+#gallery .swiper-slide a:hover {
+  transform: translateY(-5px);
+}
+
+/*--------------------------------------------------------------
+# Lightbox (Selected Image) UI polish
+--------------------------------------------------------------*/
+.glightbox-container .gslide-image img {
+  max-height: 85vh !important; /* Limiting height to provide background breathing room */
+  border-radius: 4px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+.glightbox-container .goverlay {
+  background: rgba(0, 0, 0, 0.9); /* Slightly deeper overlay for focus */
+}
+
+/*--------------------------------------------------------------
 # Scroll-top - lift above mobile sticky bar, desktop only
 --------------------------------------------------------------*/
 @media (max-width: 767px) {
